@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0c0b">
+<meta name="description" content="Vozes Quilombolas — plataforma de memória, cultura, território e valorização das comunidades quilombolas do Maranhão.">
+<title>Vozes Quilombolas — Memória, território e identidade</title>
+<style>
+:root{--bg:#0b0c0b;--panel:#121412;--panel2:#191c18;--line:#292d27;--text:#f1f0e9;--muted:#a5a89d;--soft:#d0cfc4;--accent:#c69b62;--accent2:#8d7048;--green:#9aa58b;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}button{cursor:pointer}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}.eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:.19em;font-size:.69rem;font-weight:750}.muted{color:var(--muted)}.serif{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.035em}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(3rem,7.5vw,6.7rem);line-height:.98;margin:22px 0 25px;max-width:850px}h2{font-size:clamp(2.2rem,4.5vw,4rem);line-height:1.04;margin:12px 0 18px}h3{font-size:1.2rem;line-height:1.25}.lead{font-size:clamp(1.05rem,1.7vw,1.25rem);color:#c5c6bc;max-width:660px}.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 19px;border:1px solid var(--accent);background:var(--accent);color:#15130f;border-radius:3px;font-weight:750;font-size:.88rem;transition:.2s}.btn:hover{background:#d8b27d;transform:translateY(-2px)}.btn.ghost{background:transparent;color:var(--text);border-color:#55594e}.btn.ghost:hover{border-color:var(--accent);color:var(--accent)}.topbar{position:sticky;top:0;z-index:20;background:rgba(11,12,11,.91);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.02em}.brandmark{width:35px;height:35px;border:1px solid var(--accent);display:grid;place-items:center;color:var(--accent);font-family:Georgia,serif;font-size:1.25rem;transform:rotate(45deg)}.brandmark span{transform:rotate(-45deg)}.brand small{display:block;color:var(--muted);font-size:.59rem;letter-spacing:.2em;font-weight:600;margin-top:-4px}.navlinks{display:flex;align-items:center;gap:25px;color:#c3c5ba;font-size:.83rem}.navlinks a:hover{color:var(--accent)}.nav-cta{padding:9px 13px;border:1px solid #4c5046;border-radius:2px}.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 11px}.hero{position:relative;min-height:690px;display:flex;align-items:center;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 76% 44%,rgba(138,104,60,.18),transparent 36%),linear-gradient(115deg,#0b0c0b 0%,#10120f 57%,#17150f 100%)}.hero:before{content:"";position:absolute;right:-7%;top:9%;width:min(58vw,700px);aspect-ratio:1;border:1px solid rgba(198,155,98,.22);border-radius:50%;box-shadow:0 0 0 48px rgba(198,155,98,.025),0 0 0 96px rgba(198,155,98,.02),0 0 0 144px rgba(198,155,98,.015)}.hero:after{content:"";position:absolute;right:8%;top:17%;width:min(38vw,470px);aspect-ratio:1;border-radius:50%;background:repeating-conic-gradient(from 10deg,rgba(198,155,98,.12) 0deg 1deg,transparent 1deg 13deg);mask-image:radial-gradient(circle,transparent 0 34%,#000 35% 36%,transparent 37% 52%,#000 53% 54%,transparent 55%)}.hero-content{position:relative;z-index:2;padding:105px 0 115px}.hero h1 em{color:var(--accent);font-style:normal}.hero-bottom{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}.hero-note{position:absolute;right:4%;bottom:42px;z-index:2;color:#777b70;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;writing-mode:vertical-rl}.scrollhint{display:flex;align-items:center;gap:12px;color:#85897e;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;margin-top:60px}.scrollhint:before{content:"";height:1px;width:46px;background:var(--accent)}section{padding:105px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:48px}.section-head p{max-width:420px;margin:0;color:var(--muted)}.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}.quote-panel{padding:38px;border:1px solid var(--line);background:linear-gradient(140deg,#171a15,#10120f);position:relative}.quote-panel:before{content:"“";position:absolute;top:2px;left:20px;font-family:Georgia,serif;font-size:5rem;color:var(--accent);opacity:.6}.quote-panel blockquote{margin:25px 0 20px;font:clamp(1.55rem,2.6vw,2.35rem)/1.25 Georgia,serif;color:#e8e4d9}.quote-panel cite{font-style:normal;color:var(--muted);font-size:.78rem}.statband{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--line);margin-top:75px}.stat{padding:30px 28px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;font:clamp(2.5rem,5vw,4.2rem)/1 Georgia,serif;color:var(--accent);margin-bottom:10px}.stat span{color:var(--muted);font-size:.82rem}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{border:1px solid var(--line);background:var(--panel);padding:27px;min-height:260px;transition:.25s;position:relative;overflow:hidden}.card:hover{border-color:#746044;transform:translateY(-4px)}.card .num{font:2.6rem Georgia,serif;color:var(--accent);opacity:.8}.card h3{margin:22px 0 10px}.card p{color:var(--muted);font-size:.9rem;margin:0}.card .arrow{position:absolute;right:25px;top:27px;color:var(--accent);font-size:1.25rem}.darkband{background:#111410;border-block:1px solid var(--line)}.story-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px;align-items:start}.story-list{display:grid;gap:0}.story{padding:23px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:42px 1fr;gap:17px}.story:last-child{border-bottom:1px solid var(--line)}.story .index{color:var(--accent);font:1.35rem Georgia,serif}.story h3{margin:0 0 6px}.story p{margin:0;color:var(--muted);font-size:.88rem}.territory-panel{padding:36px;background:#171a15;border:1px solid var(--line);position:relative;overflow:hidden}.territory-panel:after{content:"";position:absolute;width:260px;height:260px;right:-85px;bottom:-125px;border:1px solid rgba(198,155,98,.3);border-radius:50%;box-shadow:0 0 0 25px rgba(198,155,98,.04),0 0 0 50px rgba(198,155,98,.03)}.territory-panel p{color:#b9bcb1;max-width:620px}.tag{display:inline-block;border:1px solid #4a4d42;color:#d5c6ad;padding:5px 9px;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;margin:5px 5px 0 0}.searchbar{display:flex;gap:10px;margin:0 0 22px}.searchbar input{flex:1;min-width:0;background:#111410;border:1px solid var(--line);padding:13px 15px;color:var(--text);outline:none}.searchbar input:focus{border-color:var(--accent)}.story-results{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.result{padding:22px;border:1px solid var(--line);background:#10120f}.result small{color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-size:.65rem}.result h3{margin:10px 0}.result p{font-size:.86rem;color:var(--muted);margin:0}.empty{color:var(--muted);padding:20px;border:1px dashed var(--line);grid-column:1/-1}.contribute{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}.formbox{background:var(--panel);border:1px solid var(--line);padding:30px}.field{margin-bottom:17px}.field label{display:block;font-size:.78rem;color:#c8c8bd;margin-bottom:7px}.field input,.field textarea,.field select{width:100%;background:#0c0e0c;color:var(--text);border:1px solid #34382f;padding:12px 13px;outline:none;border-radius:0}.field textarea{min-height:105px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--accent)}.formnote{font-size:.73rem;color:#898d81;margin:12px 0 0}.notice{display:none;margin-top:15px;color:#c4d0b8;font-size:.85rem}.faq{max-width:850px}.faq details{border-top:1px solid var(--line);padding:20px 0}.faq details:last-child{border-bottom:1px solid var(--line)}.faq summary{cursor:pointer;list-style:none;font-weight:650;display:flex;justify-content:space-between;gap:20px}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";color:var(--accent);font-size:1.3rem}.faq details[open] summary:after{content:"−"}.faq details p{color:var(--muted);max-width:740px;margin:14px 0 0;font-size:.91rem}.sources{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.sources a{color:#d4b27f;text-decoration:underline;text-underline-offset:4px;font-size:.82rem}.footer{padding:45px 0;border-top:1px solid var(--line);background:#080908}.footrow{display:flex;justify-content:space-between;gap:30px;align-items:center}.footrow p{margin:5px 0 0;color:#7f8379;font-size:.76rem}.footlinks{display:flex;gap:18px;flex-wrap:wrap;color:#a7aa9f;font-size:.78rem}.footlinks a:hover{color:var(--accent)}.disclaimer{margin-top:30px;color:#70746a;font-size:.7rem;max-width:800px}
+@media(max-width:850px){.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:#0d0f0d;border-bottom:1px solid var(--line);padding:20px 24px;flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu{display:block}.hero{min-height:620px}.hero:before{right:-35%;width:95vw}.hero:after{right:-15%;width:75vw}.intro-grid,.story-layout,.contribute{grid-template-columns:1fr;gap:35px}.cards{grid-template-columns:repeat(2,1fr)}.section-head{display:block}.section-head p{margin-top:16px}.hero-note{display:none}}
+@media(max-width:560px){.wrap{width:min(var(--max),calc(100% - 32px))}section{padding:75px 0}.hero{min-height:620px}.hero-content{padding:85px 0}.hero-bottom .btn{width:100%;justify-content:center}.cards,.story-results{grid-template-columns:1fr}.statband{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line);padding:23px 8px}.stat:last-child{border-bottom:0}.quote-panel,.territory-panel,.formbox{padding:25px}.footrow{align-items:flex-start;flex-direction:column}.searchbar{flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="topbar">
+ <div class="wrap nav">
+  <a class="brand" href="#inicio" aria-label="Vozes Quilombolas, início"><span class="brandmark"><span>V</span></span><span>VOZES QUILOMBOLAS<small>MARANHÃO · MEMÓRIA E TERRITÓRIO</small></span></a>
+  <nav class="navlinks" id="navlinks">
+   <a href="#sobre">O projeto</a><a href="#memoria">Memória</a><a href="#territorio">Território</a><a href="#cultura">Cultura</a><a href="#equipe">Integrantes</a><a href="#participar" class="nav-cta">Compartilhe uma história ↗</a>
+  </nav>
+  <button class="menu" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+ </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+ <div class="wrap hero-content">
+  <div class="eyebrow">Uma plataforma de memória e pertencimento</div>
+  <h1 class="serif">A história de um povo.<br><em>A voz de muitos.</em></h1>
+  <p class="lead">Um espaço para conhecer, valorizar e preservar as histórias, os saberes e os territórios das comunidades quilombolas do Maranhão.</p>
+  <div class="hero-bottom"><a class="btn" href="#sobre">Conheça o projeto <span>↗</span></a><a class="btn ghost" href="#memoria">Explore as histórias</a></div>
+  <div class="scrollhint">Deslize para descobrir</div>
+ </div>
+ <div class="hero-note">Ancestralidade · Cultura · Resistência</div>
+</section>
+
+<section id="sobre">
+ <div class="wrap">
+  <div class="intro-grid">
+   <div><div class="eyebrow">01 / Sobre o projeto</div><h2 class="serif">Não é só sobre o passado. É sobre <em style="color:var(--accent)">continuidade.</em></h2>
+    <p class="lead">Vozes Quilombolas nasce para aproximar pessoas das histórias e realidades quilombolas maranhenses — reconhecendo que cada comunidade tem sua própria trajetória, seus conhecimentos e suas formas de existir.</p>
+    <p class="muted">A proposta é reunir conteúdo educativo, registros culturais e relatos construídos com autorização das próprias comunidades. A plataforma não fala no lugar delas: abre espaço para que suas vozes sejam ouvidas.</p>
+    <a class="btn ghost" href="#participar">Faça parte dessa memória ↗</a>
+   </div>
+   <div class="quote-panel"><div class="eyebrow">Nossa ideia central</div><blockquote>“Preservar a memória também é proteger o direito de construir o futuro.”</blockquote><cite>VOZES QUILOMBOLAS · MARANHÃO</cite></div>
+  </div>
+  <div class="statband">
+   <div class="stat"><strong>1.269</strong><span>comunidades quilombolas certificadas no Maranhão, segundo atualização divulgada pela Fundação Cultural Palmares em novembro de 2026.</span></div>
+   <div class="stat"><strong>269 mil</strong><span>pessoas quilombolas no Maranhão, conforme dados do Censo 2022 divulgados pela Fundação Cultural Palmares em 2026.</span></div>
+   <div class="stat"><strong>01</strong><span>compromisso: valorizar a diversidade e respeitar a autonomia de cada comunidade.</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="darkband" id="memoria">
+ <div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">02 / Memória e identidade</div><h2 class="serif">Histórias que<br>merecem permanecer.</h2></div><p>As comunidades quilombolas têm trajetórias próprias, construídas por gerações. Conhecer essas histórias é reconhecer a presença, a contribuição e os direitos de seus povos.</p></div>
+  <div class="cards">
+   <article class="card"><span class="num">01</span><span class="arrow">↗</span><h3>Formação histórica</h3><p>Conheça os processos de resistência, organização coletiva e construção das comunidades quilombolas no Maranhão.</p></article>
+   <article class="card"><span class="num">02</span><span class="arrow">↗</span><h3>Memória oral</h3><p>Relatos de moradores, lembranças familiares e conhecimentos transmitidos entre gerações — sempre com consentimento.</p></article>
+   <article class="card"><span class="num">03</span><span class="arrow">↗</span><h3>Identidade e pertencimento</h3><p>O território, a ancestralidade e as práticas culturais fazem parte da identidade e da continuidade comunitária.</p></article>
+  </div>
+ </div>
+</section>
+
+<section id="territorio">
+ <div class="wrap">
+  <div class="story-layout">
+   <div><div class="eyebrow">03 / Território e direitos</div><h2 class="serif">Terra é memória. É vida. É direito.</h2><p class="muted">O território quilombola não é apenas uma área no mapa. É espaço de moradia, trabalho, relações sociais, práticas culturais e reprodução da vida comunitária.</p><p class="muted">A regularização fundiária é um processo importante para a proteção desses direitos. No Maranhão, órgãos estaduais e federais atuam conforme a situação e o domínio das terras.</p></div>
+   <div class="territory-panel"><div class="eyebrow">Por que o território importa?</div><h3 class="serif" style="font-size:2rem;margin:17px 0">Sem território protegido, tradições e modos de vida também ficam ameaçados.</h3><p>Conflitos fundiários, pressões sobre áreas tradicionais e demora nos processos de regularização podem afetar a segurança e a autonomia das comunidades.</p><span class="tag">Direito à terra</span><span class="tag">Autonomia</span><span class="tag">Proteção cultural</span><span class="tag">Justiça territorial</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="darkband" id="cultura">
+ <div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">04 / Cultura e cotidiano</div><h2 class="serif">A cultura está<br>no jeito de viver.</h2></div><p>Não existe uma única cultura quilombola. Cada comunidade tem saberes, práticas, celebrações e formas de organização que devem ser conhecidas em sua diversidade.</p></div>
+  <div class="cards">
+   <article class="card"><span class="num">A</span><h3>Saberes e tradições</h3><p>Conhecimentos sobre plantas, culinária, celebrações, religiosidade, música e transmissão de saberes.</p></article>
+   <article class="card"><span class="num">B</span><h3>Trabalho e sustento</h3><p>Agricultura familiar, pesca, extrativismo, artesanato e outras atividades que variam conforme cada território.</p></article>
+   <article class="card"><span class="num">C</span><h3>Expressões culturais</h3><p>Manifestações artísticas e culturais que mantêm vivas a ancestralidade, a memória e os vínculos comunitários.</p></article>
+  </div>
+ </div>
+</section>
+
+<section id="explorar">
+ <div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">05 / Explore o conteúdo</div><h2 class="serif">Aprender também<br>é uma forma de ouvir.</h2></div><p>Pesquise os temas do projeto e descubra pontos de partida para conhecer melhor as realidades quilombolas.</p></div>
+  <div class="searchbar"><input id="searchInput" type="search" placeholder="Busque por história, cultura, território..." aria-label="Buscar conteúdo"><button class="btn" id="clearSearch">Limpar</button></div>
+  <div class="story-results" id="results">
+   <article class="result" data-tags="história memória ancestralidade formação resistência"><small>História · Memória</small><h3>Uma história de resistência</h3><p>Entenda como ancestralidade, organização e resistência fazem parte das trajetórias quilombolas.</p></article>
+   <article class="result" data-tags="território terra direitos titulação conflitos"><small>Território · Direitos</small><h3>O que é território quilombola?</h3><p>Conheça a relação entre terra, identidade, vida comunitária e regularização fundiária.</p></article>
+   <article class="result" data-tags="cultura tradição música culinária celebrações"><small>Cultura · Identidade</small><h3>Tradições que atravessam gerações</h3><p>Saiba por que os saberes e as manifestações culturais precisam ser valorizados em sua diversidade.</p></article>
+   <article class="result" data-tags="trabalho agricultura pesca extrativismo economia"><small>Trabalho · Cotidiano</small><h3>Trabalho e modos de vida</h3><p>Conheça atividades produtivas e conhecimentos ligados aos territórios e às comunidades.</p></article>
+   <article class="result" data-tags="maranhão alcântara comunidades quilombolas"><small>Maranhão · Territórios</small><h3>Quilombos no Maranhão</h3><p>O estado reúne uma presença quilombola expressiva e diferentes realidades territoriais.</p></article>
+   <article class="result" data-tags="memória oral entrevista relatos voz participação"><small>Participação · Memória oral</small><h3>Quem conta a história?</h3><p>Conheça a proposta de registrar relatos com escuta, autorização e protagonismo comunitário.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="darkband" id="participar">
+ <div class="wrap">
+  <div class="contribute">
+   <div><div class="eyebrow">06 / Faça parte</div><h2 class="serif">Toda memória merece ser ouvida.</h2><p class="lead">Você conhece uma história, manifestação cultural, projeto ou iniciativa quilombola no Maranhão?</p><p class="muted">Compartilhe uma sugestão para que o projeto possa pesquisar, verificar as informações e, quando autorizado, dar visibilidade a essa memória.</p><p class="muted" style="font-size:.82rem">Importante: não envie documentos pessoais, dados sensíveis ou informações sobre locais sagrados/privados sem autorização da comunidade.</p></div>
+   <form class="formbox" id="shareForm">
+    <div class="field"><label for="name">Seu nome (opcional)</label><input id="name" name="name" placeholder="Como gostaria de ser identificado?"></div>
+    <div class="field"><label for="topic">Sobre o que deseja compartilhar?</label><select id="topic" name="topic" required><option value="">Selecione um tema</option><option>História ou memória</option><option>Cultura e tradição</option><option>Território e direitos</option><option>Trabalho e economia local</option><option>Projeto ou iniciativa comunitária</option><option>Outro assunto</option></select></div>
+    <div class="field"><label for="message">Conte um pouco (sem dados pessoais sensíveis)</label><textarea id="message" name="message" required placeholder="Escreva sua sugestão ou indique uma fonte pública..."></textarea></div>
+    <button class="btn" type="submit">Registrar sugestão ↗</button>
+    <p class="formnote">Demonstração acadêmica: este formulário não envia nem armazena dados. Ao enviar, você verá uma confirmação apenas nesta página.</p>
+    <div class="notice" id="notice" role="status">Sugestão registrada nesta demonstração. Para receber contribuições reais, o projeto precisará de um canal seguro e de autorização dos envolvidos.</div>
+   </form>
+  </div>
+ </div>
+</section>
+
+<section id="duvidas">
+ <div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">07 / Para entender melhor</div><h2 class="serif">Perguntas importantes.</h2></div><p>Informação confiável ajuda a combater estereótipos e a compreender os direitos e a diversidade das comunidades quilombolas.</p></div>
+  <div class="faq">
+   <details><summary>O que caracteriza uma comunidade quilombola?</summary><p>De acordo com a definição utilizada pelo Incra, são grupos étnico-raciais que se autodefinem e possuem trajetória histórica própria, relações territoriais específicas e ancestralidade negra relacionada à resistência à opressão histórica.</p></details>
+   <details><summary>Quem define se uma comunidade é quilombola?</summary><p>A autodefinição é um princípio central. A Fundação Cultural Palmares emite a certidão de autodefinição e mantém o cadastro de comunidades certificadas. A certificação não substitui o processo de regularização territorial.</p></details>
+   <details><summary>O que significa titular um território?</summary><p>É concluir o processo de reconhecimento e regularização fundiária, garantindo formalmente o território à comunidade. A competência pode envolver órgãos federais ou estaduais, conforme a situação fundiária.</p></details>
+   <details><summary>Por que é importante preservar relatos e tradições?</summary><p>Porque a memória e os conhecimentos comunitários são parte do patrimônio cultural e da continuidade dos modos de vida. Qualquer registro deve respeitar a vontade, a privacidade e o protagonismo das pessoas e comunidades.</p></details>
+  </div>
+ </div>
+</section>
+
+
+<section class="darkband" id="equipe">
+ <div class="wrap">
+  <div class="section-head">
+   <div><div class="eyebrow">09 / Quem constrói este projeto</div><h2 class="serif">Conhecimento se<br>constrói em conjunto.</h2></div>
+   <p>Este projeto é resultado de pesquisa, colaboração e compromisso com a valorização da memória e da cultura quilombola maranhense.</p>
+  </div>
+  <div class="cards">
+   <article class="card"><span class="num">01</span><h3>Filipe Liberato Santana Brito</h3><p>Integrante do projeto</p></article>
+   <article class="card"><span class="num">02</span><h3>Ioná Abade</h3><p>Integrante do projeto</p></article>
+   <article class="card"><span class="num">✦</span><h3>Agradecimento especial</h3><p>Ao professor Rayfran Castro, nosso agradecimento pela orientação, pelo incentivo e por contribuir para o desenvolvimento deste projeto.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="darkband" id="fontes">
+ <div class="wrap">
+  <div class="eyebrow">08 / Fontes e leitura complementar</div><h2 class="serif">Conhecimento com<br>responsabilidade.</h2>
+  <p class="muted" style="max-width:700px">Os dados e conceitos desta página foram organizados a partir de fontes institucionais. Consulte as publicações originais para conferir atualizações, metodologias e detalhes.</p>
+  <div class="sources">
+   <a href="https://www.gov.br/palmares/pt-br/departamentos/protecao-preservacao-e-articulacao/certificacao-quilombola" target="_blank" rel="noopener">Fundação Cultural Palmares — Certificação Quilombola ↗</a>
+   <a href="https://www.gov.br/incra/pt-br/assuntos/governanca-fundiaria/quilombolas/" target="_blank" rel="noopener">Incra — Quilombolas ↗</a>
+   <a href="https://iterma.ma.gov.br/" target="_blank" rel="noopener">ITERMA — Instituto de Colonização e Terras do Maranhão ↗</a>
+   <a href="https://www.gov.br/palmares/pt-br/assuntos/noticias/fundacao-cultural-palmares-amplia-certificacao-quilombola-e-registra-resultado-historico-em-2026" target="_blank" rel="noopener">FCP — Dados de certificação divulgados em 2026 ↗</a>
+   <a href="https://www.gov.br/palmares/pt-br/assuntos/noticias/certificacao-quilombola-avanca-no-maranhao-fundacao-cultural-palmares-e-anater-atuam-em-defesa-dos-direitos-das-comunidades-tradicionai/" target="_blank" rel="noopener">FCP — Censo Quilombola e Maranhão ↗</a>
+  </div>
+  <p class="disclaimer">Este site é um protótipo educativo desenvolvido para fins de apresentação. Não representa oficialmente comunidades, associações ou órgãos públicos. Os conteúdos culturais e relatos devem ser construídos em diálogo com as comunidades, com consentimento e validação. Os números exibidos refletem publicações institucionais consultadas em novembro de 2026 e podem ser atualizados pelas fontes.</p>
+ </div>
+</section>
+</main>
+<footer class="footer"><div class="wrap footrow"><div><a class="brand" href="#inicio"><span class="brandmark"><span>V</span></span><span>VOZES QUILOMBOLAS<small>MARANHÃO · MEMÓRIA E TERRITÓRIO</small></span></a><p>Memória viva. Território respeitado. Vozes presentes.</p></div><div class="footlinks"><a href="#sobre">O projeto</a><a href="#territorio">Território</a><a href="#cultura">Cultura</a><a href="#fontes">Fontes</a><a href="#equipe">Integrantes</a><a href="#inicio">Voltar ao topo ↑</a></div></div></footer>
+<script>
+const menuBtn=document.getElementById('menuBtn');
+const nav=document.getElementById('navlinks');
+menuBtn.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰';});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}));
+const search=document.getElementById('searchInput');
+const results=[...document.querySelectorAll('.result')];
+function filter(){const q=search.value.trim().toLocaleLowerCase('pt-BR');let count=0;results.forEach(card=>{const hay=(card.innerText+' '+card.dataset.tags).toLocaleLowerCase('pt-BR');const show=hay.includes(q);card.style.display=show?'block':'none';if(show)count++;});let empty=document.querySelector('.empty');if(!count){if(!empty){empty=document.createElement('div');empty.className='empty';empty.textContent='Nenhum conteúdo encontrado. Tente outra palavra.';document.getElementById('results').appendChild(empty);}}else if(empty)empty.remove();}
+search.addEventListener('input',filter);
+document.getElementById('clearSearch').addEventListener('click',()=>{search.value='';filter();search.focus();});
+document.getElementById('shareForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('notice').style.display='block';e.target.reset();});
+</script>
+</body>
+</html>
